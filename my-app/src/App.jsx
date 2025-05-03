@@ -1,10 +1,13 @@
-import ListaTareas from "./components/ListaTareas";
+import { ThemeProvider } from "./components/ThemeProvider";
+import { Contenido } from "./components/Contenido";
+
 
 function App() {
   return(
-    <div style={{padding: "2rem" , fontFamily: "Arial"}}>
-    <ListaTareas />
-    </div>
+    <ThemeProvider>
+      <Contenido />
+    </ThemeProvider>  
+   
   );
 
   
